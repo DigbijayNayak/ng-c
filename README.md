@@ -1,27 +1,38 @@
-# NgProj
+# Setup Environment for Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.5.
+1. Download and Install Node JS for "NPM"
 
-## Development server
+   https://nodejs.org/en/download/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+2. Download and Install Angular CLI, which is an command line tool used to manage your application.
 
-## Code scaffolding
+   https://cli.angular.io/
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Open Your command prompt
+- Type the following
 
-## Build
+  C:\> `npm install -g @angular/cli`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Check the angular version after installing
 
-## Running unit tests
+  C:\> `ng --version`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Update your CLI if it is using older version:
 
-## Running end-to-end tests
+  C:\> `npm uninstall @angular/cli`
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+  C:\> `npm install @angular/cli`
 
-## Further help
+  (or)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+  C:\> `ng update`
+
+  C:\> `ng update @angular/cli @angular/core --allow-dirty`
+
+# Setup Angular Workspace
+
+- To configure workspace run the following command.
+
+  C:\> `ng new Your-Workspace-Name --create-application=false`
+
+  ![Alt text](workspace.png)
