@@ -46,6 +46,8 @@
 
   ![Alt text](workspace.png)
 
+[🔙](#table-of-contents)
+
 # Create a new Angular Application
 
 1. Open Terminal
@@ -65,6 +67,8 @@
 
 - Your application starts of http://localhost:4200
 
+[🔙](#table-of-contents)
+
 # Setup Bootstrap CSS for Angular Application
 
 - Download and Install Bootstrap for your Workspace.
@@ -78,12 +82,17 @@
                           ├───bootstrap.css/bootstrap.min.css
 
 - Go to "styles.css" file in "src" and import bootstrap.css
-- `@import ../../../node_modules/bootstrap/dist/css/bootstrap.css`
+
+  `@import ../../../node_modules/bootstrap/dist/css/bootstrap.css`
+
+[🔙](#table-of-contents)
 
 # Download and Use Fontawesome
 
 - Download "Fontawesome" Free for Web.
+
   https://fontawesome.com/download
+
 - Extract and copy all files.
 - Go to "node_modules" folder in file explore.
 - Crate a sub folder by name "Fonts"
@@ -91,3 +100,5 @@
 - Import in "styles.css"
 
   `@import '../../../node_modules/Fonts/css/all.css`
+
+[🔙](#table-of-contents)
