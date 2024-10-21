@@ -1,0 +1,17 @@
+.container-fluid {
+  margin: auto;
+  padding: 20px;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+}
+
+.errorStyle {
+  border: 1px solid red;
+  box-shadow: 2px 3px 4px red;
+}
+
+.validStyle {
+  border: 1px solid green;
+  box-shadow: 2px 3px 4px green;
+}

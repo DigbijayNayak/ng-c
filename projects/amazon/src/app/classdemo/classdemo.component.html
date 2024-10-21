@@ -1,0 +1,43 @@
+<div class="container-fluid">
+  <div>
+    <div style="margin: 10px">
+      <ul class="list-unstyled">
+        <li>
+          <input type="checkbox" [(ngModel)]="ONTextEffects" />Text Effects
+        </li>
+        <li>
+          <input type="checkbox" [(ngModel)]="ONBackgroundEffects" />Background
+          Effects Effects
+        </li>
+        <li>
+          <input type="checkbox" [(ngModel)]="ONBorderEffects" />Border Effects
+        </li>
+      </ul>
+    </div>
+    <h2
+      [ngClass]="{
+        borderEffects: ONBorderEffects,
+        textEffects: ONTextEffects,
+        backgroundEffects: ONBackgroundEffects
+      }"
+    >
+      Class Binding in Angular
+    </h2>
+
+    <div class="form-group">
+      <label for="">Enter Even Number</label>
+      <div>
+        <input
+          type="text"
+          class="form-control"
+          [ngClass]="{
+            errorStyle: applyErrorStyle,
+            validStyle: applyValidStyle
+          }"
+          (blur)="OnBlur()"
+          [(ngModel)]="txtEven"
+        />
+      </div>
+    </div>
+  </div>
+</div>

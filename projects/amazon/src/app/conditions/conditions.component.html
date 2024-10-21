@@ -1,0 +1,39 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-3">
+      <div class="form-group">
+        <label>Select a Category</label>
+        <div>
+          <select [(ngModel)]="selectedCategoryName" class="form-control">
+            <option *ngFor="let item of categories">
+              {{ item }}
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="col-9">
+      <div class="card-deck">
+        <ng-container *ngFor="let item of products">
+          <div
+            class="card"
+            *ngIf="
+              selectedCategoryName == 'All' ||
+              selectedCategoryName == item.Category
+            "
+          >
+            <div class="card-header">
+              <h3>{{ item.Name }}</h3>
+            </div>
+            <div class="card-body">
+              <img [src]="item.Photo" width="150" height="150" />
+            </div>
+            <div class="card-footer">
+              <h3>{{ item.Price | currency : "INR" }}</h3>
+            </div>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>

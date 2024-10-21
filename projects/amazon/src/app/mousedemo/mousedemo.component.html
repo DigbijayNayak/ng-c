@@ -1,0 +1,117 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="text-center" style="margin: auto">
+      <img
+        (mouseover)="Ad1()"
+        (mouseout)="Ad2()"
+        [src]="adImage"
+        width="400"
+        height="100"
+      />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-3">
+      <h2>Menu</h2>
+    </div>
+    <div class="col-6">
+      <h2>Shopping</h2>
+      <div style="margin: auto">
+        <img
+          (mousedown)="onMouseDown()"
+          (mouseup)="onMouseUp()"
+          [src]="offerImage"
+          width="200"
+          height="200"
+        />
+      </div>
+    </div>
+    <div class="col-3">
+      <h2>Offers</h2>
+      <marquee
+        (mouseover)="onMouseOver($event)"
+        (mouseout)="onMouseOut($event)"
+        scrollamount="10"
+        direction="up"
+      >
+        <div>
+          <img src="assets/jblspeaker.jpg" width="100" height="100" />
+          <div>
+            <span>40% OFF</span>
+          </div>
+        </div>
+        <div>
+          <img src="assets/shoe.jpg" width="100" height="100" />
+          <div>
+            <span>60% OFF</span>
+          </div>
+        </div>
+        <div>
+          <img src="assets/shirt.jpg" width="100" height="100" />
+          <div>
+            <span>30% OFF</span>
+          </div>
+        </div>
+      </marquee>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="container-fluid">
+  <div class="row">
+    <div class="col-3">
+      <h2>Menu</h2>
+    </div>
+    <div class="col-6">
+      <h2>Shopping</h2>
+    </div>
+    <div class="col-3">
+      <h2>Offers</h2>
+      <marquee
+        (mouseover)="onMouseOver($event)"
+        (mouseout)="onMouseOut($event)"
+        scrollamount="10"
+        direction="up"
+      >
+        <div>
+          <img src="assets/jblspeaker.jpg" width="100" height="100" />
+          <div>
+            <span>40% OFF</span>
+          </div>
+        </div>
+        <div>
+          <img src="assets/shoe.jpg" width="100" height="100" />
+          <div>
+            <span>60% OFF</span>
+          </div>
+        </div>
+        <div>
+          <img src="assets/shirt.jpg" width="100" height="100" />
+          <div>
+            <span>30% OFF</span>
+          </div>
+        </div>
+      </marquee>
+    </div>
+  </div>
+</div> -->
+
+<!-- <div [ngStyle]="styleObj" class="container-fluid" style="height: 1000px">
+  <h2>Color Panel</h2>
+  <div
+    (mouseover)="onMouseOver($event)"
+    (mouseout)="onMouseOut()"
+    class="row"
+    style="margin: 30px; height: 100px; color: white"
+  >
+    <div class="col-4" id="red" style="background-color: red">Red</div>
+
+    <div class="col-4" id="green" style="background-color: green">Green</div>
+
+    <div class="col-4" id="blue" style="background-color: blue">Blue</div>
+
+    <div>
+      <h1 [ngStyle]="styleObj" class="text-center">Sample Text</h1>
+    </div>
+  </div>
+</div> -->

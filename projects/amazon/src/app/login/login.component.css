@@ -1,0 +1,11 @@
+.container-fluid {
+  width: 300px;
+  padding: 20px;
+  margin: auto;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid darkcyan;
+  border-radius: 20px;
+  box-shadow: 2px 3px 4px darkcyan;
+}

@@ -1,0 +1,85 @@
+<div class="container-fluid">
+  <!-- <h2>Products Status</h2> -->
+  <!-- <p>{{ product.Name | titlecase }}</p>
+  <p>{{ product.Price | number : "5.3-4" }}</p>
+  <p>{{ product.Price | currency : "&#8377;" }}</p>
+  <p>{{ product.Mfd | date : "MM-dd-yyyy" }}</p>
+  <p>{{ product.Sales | percent : "2.2-2" }}</p>
+
+  <ol>
+    <li *ngFor="let item of products | slice : 0 : 3">
+      {{ item }}
+    </li>
+  </ol>
+
+  <pre>
+    {{ product | json }}
+  </pre>
+
+  <div class="container-fluid">
+    <h2>Products Array</h2>
+    <ol class="list-unstyled">
+      <li *ngFor="let item of data | keyvalue">
+        {{ item.key }}-{{ item.value }}
+      </li>
+    </ol>
+  </div> -->
+
+  <!-- Select Pipe -->
+  <!-- <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>City</th>
+        <th>Delivery Status</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let item of products">
+        <td>{{ item.Name }}</td>
+        <td>{{ item.City }}</td>
+        <td>{{ item.City | i18nSelect : statusMessage }}</td>
+      </tr>
+    </tbody>
+  </table> -->
+
+  <!-- Plural Pipe -->
+  <div class="container">
+    <p>{{ msg | sentencecase }}</p>
+    <h2>Plural Demo</h2>
+    <div class="form-group">
+      <div class="btn-toolbar bg-danger justify-content-between">
+        <div class="btn-group">
+          <button (click)="GameClick()" class="btn btn-danger">
+            Install Game
+          </button>
+          <button (click)="FBClick()" class="btn btn-danger">Update FB</button>
+          <button class="btn btn-danger">Clean Memory</button>
+        </div>
+
+        <div class="btn-group">
+          <button (click)="ClearAll()" class="btn btn-danger">
+            <span class="fa fa-trash">Clear Notifications</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <button (click)="showNotifications()" class="btn">
+        <!-- <mat-icon matBadge="{{ notifications.length }}">phone</mat-icon> -->
+      </button>
+      <div>
+        {{ notifications.length | i18nPlural : notificationsMap }}
+      </div>
+    </div>
+    <div class="form-group">
+      <ol>
+        <li *ngFor="let item of notifications">
+          {{ item }}
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>
